@@ -2,7 +2,21 @@
 
 ## Set up your doc root
 
-	cp -r example /var/www/my-app
+create composer.json and run "composer update"
+	
+	{
+	    "require": {
+	        "fliglio/app": "dev-master"
+	    },
+	    "autoload": {
+	        "psr-0": { "MyApp\\": "app/" }
+	    }
+	}
+
+or grab the example template from this git repo: 
+
+	git clone https://github.com/benschw/fliglio-app.git
+	cp -r fliglio-app/example /var/www/my-app
 	cd /var/www/my-app
 	composer update
 
