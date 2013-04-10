@@ -13,8 +13,5 @@
 		"fliglio/web":     "~1.1",
 		"fliglio/fltk":    "~1.0"
 
-	},
-	"autoload": {
-		"psr-0": { "Fliglio\\Flfc\\": "" }
 	}
 }
