@@ -1,0 +1,8 @@
+{
+    "require": {
+        "fliglio/app": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "MyApp\\": "app/" }
+    }
+}
