@@ -1,0 +1,20 @@
+{
+	"name": "fliglio/fliglio",
+	"type": "library",
+	"license": "GPL-3.0+",
+	"authors": [{
+		"name": "Ben Schwartz",
+		"email": "benschw@gmail.com"
+	}],
+	"require": {
+		"php": ">=5.3",
+		"fliglio/flfc":    "~1.0",
+		"fliglio/routing": "~1.0",
+		"fliglio/web":     "~1.1",
+		"fliglio/fltk":    "~1.0"
+
+	},
+	"autoload": {
+		"psr-0": { "Fliglio\\Flfc\\": "" }
+	}
+}
