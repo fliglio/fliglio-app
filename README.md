@@ -7,7 +7,7 @@
 - install your vhost 
 - test your app
 
-composer.json
+### composer.json
 	
 	{
 	    "require": {
@@ -17,14 +17,14 @@ composer.json
 	}
 
 
-wire it up
+### wire it up
 	
 	mkdir app
 	ln -s vendor/fliglio/app/example/app/init.php app/init.php
 
 
 
-vhost-myapp
+### vhost-myapp
 
 	<VirtualHost *:80>
 	    DocumentRoot "/var/www/my-app/app"
@@ -46,6 +46,6 @@ vhost-myapp
 	</VirtualHost>
 
 
-Try it out
+### Try it out
 
 	curl http://fl.local/api/hello/world
