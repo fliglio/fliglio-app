@@ -4,6 +4,8 @@
 
 - create composer.json and run "composer update"
 - create an "app" folder and symlink in the example driver
+- install your vhost 
+- test your app
 
 composer.json
 	
@@ -22,7 +24,7 @@ wire it up
 
 
 
-## Set up a vhost
+vhost-myapp
 
 	<VirtualHost *:80>
 	    DocumentRoot "/var/www/my-app/app"
@@ -44,6 +46,6 @@ wire it up
 	</VirtualHost>
 
 
-## Try it out
+Try it out
 
-curl http://fl.local/api/hello/world
+	curl http://fl.local/api/hello/world
