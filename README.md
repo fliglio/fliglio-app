@@ -1,6 +1,6 @@
 # fliglio-app
 
-## Set up your doc root
+## Install
 
 - create composer.json and run "composer update"
 - create an "app" folder and symlink in the example driver
