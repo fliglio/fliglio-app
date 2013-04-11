@@ -2,23 +2,24 @@
 
 ## Set up your doc root
 
-create composer.json and run "composer update"
+- create composer.json and run "composer update"
+- create an "app" folder and symlink in the example driver
+
+composer.json
 	
 	{
 	    "require": {
 	        "fliglio/app": "dev-master"
 	    },
-	    "autoload": {
-	        "psr-0": { "MyApp\\": "app/" }
-	    }
+		"minimum-stability" : "dev"
 	}
 
-or grab the example template from this git repo: 
 
-	git clone https://github.com/benschw/fliglio-app.git
-	cp -r fliglio-app/example /var/www/my-app
-	cd /var/www/my-app
-	composer update
+wire it up
+	
+	mkdir app
+	ln -s vendor/fliglio/app/example/app/init.php app/init.php
+
 
 
 ## Set up a vhost
