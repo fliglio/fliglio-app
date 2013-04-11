@@ -64,4 +64,4 @@ FcChainFactory::addResolver($resolver);
 
 // Run App
 $chainRunner = new FcChainRunner();
-$chainRunner->dispatchRequest(Context::get());
+$chainRunner->dispatchRequest($context);
