@@ -11,19 +11,9 @@ use Fliglio\Flfc\FcChainFactory;
 use Fliglio\Flfc\FcChainRunner;
 use Fliglio\Routing as routing;
 use Fliglio\Routing\RouteMap;
-use Fliglio\Web\Uri;
-use Fliglio\Web\HttpAttributes;
 
 
-error_reporting(E_ALL | E_STRICT);
-ini_set("display_errors" , 1);
-
-
-require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/autoload.php';
-include 'Example/Services.php';
-
-
-HttpAttributes::apacheDefaults();
+require_once __DIR__ . '/../app/bootstrap.php';
 
 
 

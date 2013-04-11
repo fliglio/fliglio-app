@@ -1,6 +1,6 @@
 {
 	"name": "fliglio/app",
-	"type": "library",
+	"type": "project",
 	"license": "GPL-3.0+",
 	"authors": [{
 		"name": "Ben Schwartz",
@@ -12,5 +12,9 @@
 		"fliglio/routing": "dev-master",
 		"fliglio/web":     "dev-master",
 		"fliglio/fltk":    "dev-master"
-	}
+	},
+	"minimum-stability" : "dev",
+    "autoload": {
+        "psr-0": { "MyApp\\": "src/" }
+    }
 }
