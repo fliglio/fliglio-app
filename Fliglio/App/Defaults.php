@@ -54,6 +54,6 @@ class Defaults {
 
 		$context->getRequest()->setRawInputStream(file_get_contents('php://input'));
 		$context->getRequest()->setParams($_REQUEST);
-		return $context
+		return $context;
 	}
 }
