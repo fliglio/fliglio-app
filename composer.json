@@ -8,10 +8,10 @@
 	}],
 	"require": {
 		"php": ">=5.3",
-		"fliglio/flfc":    "~1.0",
-		"fliglio/routing": "~1.0",
-		"fliglio/web":     "~1.1",
-		"fliglio/fltk":    "~1.0"
+		"fliglio/flfc":    "dev-master",
+		"fliglio/routing": "dev-master",
+		"fliglio/web":     "dev-master",
+		"fliglio/fltk":    "dev-master"
 
 	}
 }
