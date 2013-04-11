@@ -43,3 +43,6 @@ or grab the example template from this git repo:
 	</VirtualHost>
 
 
+## Try it out
+
+curl http://fl.local/api/hello/world
