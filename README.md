@@ -36,8 +36,7 @@
 	        RewriteCond %{SCRIPT_FILENAME} -d
 	        RewriteRule .+ - [L]
 
-	        RewriteRule ^api/(.*)$ /init.php?fliglio_request=/api/$1 [L,QSA]
-	        RewriteRule ^(.*)$ /index.html#$1 [L,QSA]
+	        RewriteRule ^(.*)$ /init.php [L,QSA]
 
 	        AllowOverride all
 	        Order allow,deny
