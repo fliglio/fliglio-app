@@ -12,6 +12,8 @@
 		"fliglio/routing": "dev-master",
 		"fliglio/web":     "dev-master",
 		"fliglio/fltk":    "dev-master"
-
-	}
+	},
+    "autoload": {
+        "psr-0": { "Fliglio\\App\\": "" }
+    }
 }
