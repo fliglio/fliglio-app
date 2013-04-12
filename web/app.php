@@ -13,7 +13,7 @@ use Fliglio\Routing as routing;
 use Fliglio\Routing\RouteMap;
 
 
-require_once __DIR__ . '/../app/bootstrap.php';
+require_once __DIR__ . '/../fliglio/bootstrap.php';
 
 
 
