@@ -1,0 +1,174 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "40a41847b55439abfb69e0162c3dd3fc",
+    "packages": [
+        {
+            "name": "fliglio/flfc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fliglio/flfc.git",
+                "reference": "7be0a24ac0368c33dacd9cabcced6368b37eae08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/7be0a24ac0368c33dacd9cabcced6368b37eae08",
+                "reference": "7be0a24ac0368c33dacd9cabcced6368b37eae08",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fliglio\\Flfc\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Schwartz",
+                    "email": "benschw@gmail.com"
+                }
+            ],
+            "time": "2014-01-21 04:33:58"
+        },
+        {
+            "name": "fliglio/fltk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fliglio/fltk.git",
+                "reference": "5a96f7db2c26eda38896f2364a963d38484cbccc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fliglio/fltk/zipball/5a96f7db2c26eda38896f2364a963d38484cbccc",
+                "reference": "5a96f7db2c26eda38896f2364a963d38484cbccc",
+                "shasum": ""
+            },
+            "require": {
+                "fliglio/flfc": "dev-master",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fliglio\\Fltk\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Schwartz",
+                    "email": "benschw@gmail.com"
+                }
+            ],
+            "time": "2015-02-19 20:03:04"
+        },
+        {
+            "name": "fliglio/routing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fliglio/routing.git",
+                "reference": "d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe",
+                "reference": "d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe",
+                "shasum": ""
+            },
+            "require": {
+                "fliglio/flfc": "dev-master",
+                "fliglio/web": "dev-master",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fliglio\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Schwartz",
+                    "email": "benschw@gmail.com"
+                }
+            ],
+            "time": "2015-02-20 22:37:20"
+        },
+        {
+            "name": "fliglio/web",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fliglio/web.git",
+                "reference": "f1daed4178c941d69cccb84c7de9b45f8f61b10e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/f1daed4178c941d69cccb84c7de9b45f8f61b10e",
+                "reference": "f1daed4178c941d69cccb84c7de9b45f8f61b10e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fliglio\\Web\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Schwartz",
+                    "email": "benschw@gmail.com"
+                }
+            ],
+            "time": "2015-02-20 22:04:51"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "fliglio/flfc": 20,
+        "fliglio/routing": 20,
+        "fliglio/web": 20,
+        "fliglio/fltk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3"
+    },
+    "platform-dev": []
+}

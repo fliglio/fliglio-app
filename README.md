@@ -6,6 +6,11 @@
 	
 	composer create-project fliglio/app --dev
 
+### docker
+
+	docker build -t benschw/fl .
+	docker run -t -d -p 80 benschw/fl
+
 ### vhost-myapp
 
 	<VirtualHost *:80>
@@ -29,4 +34,4 @@
 
 ### Try it out
 
-	curl http://fl.local/api/hello/world
+	curl http://fl.local/api/foo
