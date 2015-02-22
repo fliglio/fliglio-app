@@ -11,7 +11,7 @@ use Fliglio\Flfc\FcChainFactory;
 use Fliglio\Flfc\FcChainRunner;
 use Fliglio\Routing as routing;
 use Fliglio\Routing\RouteMap;
-use Fliglio\Routing\RouteBuilder;
+use Fliglio\Routing\Type\RouteBuilder;
 use Fliglio\Web\HttpAttributes;
 
 
