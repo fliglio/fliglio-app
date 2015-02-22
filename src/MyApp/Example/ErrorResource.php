@@ -10,10 +10,7 @@ use Fliglio\Fltk\JsonView;
 
 class ErrorResource implements Routable {
 
-	private $context;
-
-	public function __construct(Context $context) {
-		$this->context = $context;
+	public function __construct() {
 	}
 	
 	public function handleError() {
