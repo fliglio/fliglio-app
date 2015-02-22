@@ -8,7 +8,7 @@ use Fliglio\Routing\Routable;
 use Fliglio\Fltk\View;
 use Fliglio\Fltk\JsonView;
 
-class ErrorResource implements Routable {
+class ErrorResource {
 
 	public function __construct() {
 	}

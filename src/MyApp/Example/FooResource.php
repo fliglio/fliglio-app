@@ -10,7 +10,7 @@ use Fliglio\Routing\Input\GetParam;
 use Fliglio\Fltk\View;
 use Fliglio\Fltk\JsonView;
 
-class FooResource implements Routable {
+class FooResource {
 
 	public function __construct() {
 	}
