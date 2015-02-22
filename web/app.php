@@ -9,10 +9,12 @@ use Fliglio\Flfc\NamespaceFcChainResolver;
 use Fliglio\Flfc\DefaultFcChainResolver;
 use Fliglio\Flfc\FcChainFactory;
 use Fliglio\Flfc\FcChainRunner;
-use Fliglio\Routing as routing;
+use Fliglio\Routing\UriLintApp;
+use Fliglio\Routing\RoutingApp;
 use Fliglio\Routing\RouteMap;
 use Fliglio\Routing\Type\RouteBuilder;
 use Fliglio\Web\HttpAttributes;
+use Fliglio\RestFc\DiInvokerApp;
 
 
 require_once __DIR__ . '/../fliglio/bootstrap.php';
@@ -50,7 +52,7 @@ $routeMap
 
 // Configure Front Controller Chain & Default Resolver
 $htmlChain = new flfc\HttpApp(new flfc\ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new flfc\HttpApp(new routing\UriLintApp(new routing\RoutingApp(new routing\InvokerApp(), $routeMap)));
+$apiChain  = new flfc\HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap)));
 
 FcChainFactory::addResolver(new DefaultFcChainResolver($apiChain));
 FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
