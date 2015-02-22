@@ -53,7 +53,7 @@ $htmlChain = new flfc\HttpApp(new flfc\ServeHtmlApp(dirname(__FILE__) . '/index.
 $apiChain  = new flfc\HttpApp(new routing\UriLintApp(new routing\RoutingApp(new routing\InvokerApp(), $routeMap)));
 
 FcChainFactory::addResolver(new DefaultFcChainResolver($apiChain));
-// FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
+FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
 
 // Run App
 $context = new Context(Request::createDefault(), new Response());
