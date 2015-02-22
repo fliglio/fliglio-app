@@ -4,8 +4,8 @@ namespace MyApp\Example;
 
 use Fliglio\Flfc\Context;
 use Fliglio\Routing\Routable;
-use Fliglio\Routing\RouteParam;
-use Fliglio\Routing\GetParam;
+use Fliglio\Routing\Input\RouteParam;
+use Fliglio\Routing\Input\GetParam;
 
 use Fliglio\Fltk\View;
 use Fliglio\Fltk\JsonView;

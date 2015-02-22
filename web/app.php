@@ -50,7 +50,7 @@ $routeMap
 
 // Configure Front Controller Chain & Default Resolver
 $htmlChain = new flfc\HttpApp(new flfc\ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new flfc\HttpApp(new routing\UriLintApp(new routing\RoutingApp(new routing\DiInvokerApp(), $routeMap)));
+$apiChain  = new flfc\HttpApp(new routing\UriLintApp(new routing\RoutingApp(new routing\InvokerApp(), $routeMap)));
 
 FcChainFactory::addResolver(new DefaultFcChainResolver($apiChain));
 // FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
