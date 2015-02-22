@@ -12,7 +12,7 @@ use Fliglio\Fltk\JsonView;
 
 class FooResource {
 
-	public function __construct() {
+	public function __construct(Context $context) {
 	}
 	
 	public function getFoo(Context $context, RouteParam $id) {
