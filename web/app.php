@@ -10,6 +10,7 @@ use Fliglio\Flfc\FcDispatcherFactory;
 use Fliglio\Flfc\Resolvers\NamespaceFcChainResolver;
 use Fliglio\Flfc\Resolvers\DefaultFcChainResolver;
 use Fliglio\Flfc\Apps\HttpApp;
+use Fliglio\Flfc\Apps\RestApp;
 use Fliglio\Flfc\Apps\ServeHtmlApp;
 
 use Fliglio\Routing\UriLintApp;
@@ -56,7 +57,7 @@ $routeMap
 
 // Configure Front Controller Chains
 $htmlChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap)));
+$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap))));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();

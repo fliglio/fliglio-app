@@ -15,15 +15,14 @@ class FooResource {
 	}
 	
 	public function getFoo(Response $resp, RouteParam $id) {
-		$resp->addHeader('Content-Type', 'text/json');
-		return new View(json_encode(array(
+		return array(
 			'id' => $id->get(),
 			'type' => 'foo'
-		)));
+		);
 	}
 
 	public function getAllFoos(Response $resp, GetParam $type = null) {
-		$resp = array(
+		$arr = array(
 			array(
 				'id' => 1
 			), array(
@@ -31,12 +30,11 @@ class FooResource {
 			)
 		);
 		if ($type != null && $type->get() == "true") {
-			$resp[0]['type'] = 'foo';
-			$resp[1]['type'] = 'foo';
+			$arr[0]['type'] = 'foo';
+			$arr[1]['type'] = 'foo';
 		}
 
-		$resp->addHeader('Content-Type', 'text/json');
-		return new View(json_encode($resp));
+		return $arr;
 	}
 	
 }
