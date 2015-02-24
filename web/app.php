@@ -47,7 +47,6 @@ $routeMap
 		->build()
 	)
 	->connect("404", RouteBuilder::get()
-		->catchAll()
 		->command('MyApp\Example.ErrorResource.handlePageNotFound')
 		->build()
 	);

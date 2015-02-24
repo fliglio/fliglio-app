@@ -6,7 +6,6 @@ use Fliglio\Flfc\Request;
 use Fliglio\Flfc\Response;
 
 use Fliglio\Fltk\View;
-use Fliglio\Fltk\JsonView;
 
 class ErrorResource {
 
@@ -15,13 +14,15 @@ class ErrorResource {
 	
 	public function handleError(Request $req, Response $resp) {
 		$resp->setStatus(500);
-		return new JsonView(array(
+		$resp->addHeader('Content-Type', 'text/json');
+		return new View(json_encode(array(
 			'exception' => $req->getProp('exception')
-		));
+		)));
 	}
 	public function handlePageNotFound(Response $resp) {
 		$resp->setStatus(404);
-		return new JsonView("Page Not Found");
+		$resp->addHeader('Content-Type', 'text/json');
+		return new View(json_encode("Page Not Found"));
 	}
 	
 }

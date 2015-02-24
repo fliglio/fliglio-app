@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0fdb4753b3c1697d784900f94969f7b4",
+    "hash": "40a41847b55439abfb69e0162c3dd3fc",
     "packages": [
         {
             "name": "fliglio/flfc",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "4585249d4bed083af1360263d3dab78817a46ace"
+                "reference": "d58251df7e6f8ac6e1587e3f2a1b9d587ce37aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/4585249d4bed083af1360263d3dab78817a46ace",
-                "reference": "4585249d4bed083af1360263d3dab78817a46ace",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/d58251df7e6f8ac6e1587e3f2a1b9d587ce37aa8",
+                "reference": "d58251df7e6f8ac6e1587e3f2a1b9d587ce37aa8",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-24 16:52:28"
+            "time": "2015-02-24 18:53:11"
         },
         {
             "name": "fliglio/fltk",
@@ -78,58 +78,17 @@
             "time": "2015-02-24 16:52:56"
         },
         {
-            "name": "fliglio/restfc",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fliglio/restfc.git",
-                "reference": "3fd829961cea291c4dd45ed1f542dc1b1adc0953"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/restfc/zipball/3fd829961cea291c4dd45ed1f542dc1b1adc0953",
-                "reference": "3fd829961cea291c4dd45ed1f542dc1b1adc0953",
-                "shasum": ""
-            },
-            "require": {
-                "fliglio/flfc": "dev-master",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "fliglio/routing": "dev-master",
-                "fliglio/web": "dev-master",
-                "phpunit/phpunit": "~4.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Fliglio\\RestFc\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Schwartz",
-                    "email": "benschw@gmail.com"
-                }
-            ],
-            "time": "2015-02-24 16:53:10"
-        },
-        {
             "name": "fliglio/routing",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "cac1cbacec1a2268142e17ece30f9178e18efb32"
+                "reference": "edee900bb85bc13087b7a4bca03267e5be601e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/cac1cbacec1a2268142e17ece30f9178e18efb32",
-                "reference": "cac1cbacec1a2268142e17ece30f9178e18efb32",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/edee900bb85bc13087b7a4bca03267e5be601e73",
+                "reference": "edee900bb85bc13087b7a4bca03267e5be601e73",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +115,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-24 17:00:04"
+            "time": "2015-02-24 19:01:52"
         },
         {
             "name": "fliglio/web",
@@ -164,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "f1daed4178c941d69cccb84c7de9b45f8f61b10e"
+                "reference": "38d9ab85240420852cf016a13498d678957955e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/f1daed4178c941d69cccb84c7de9b45f8f61b10e",
-                "reference": "f1daed4178c941d69cccb84c7de9b45f8f61b10e",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/38d9ab85240420852cf016a13498d678957955e4",
+                "reference": "38d9ab85240420852cf016a13498d678957955e4",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +153,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-20 22:04:51"
+            "time": "2015-02-24 18:52:22"
         }
     ],
     "packages-dev": [],
@@ -203,7 +162,6 @@
     "stability-flags": {
         "fliglio/flfc": 20,
         "fliglio/routing": 20,
-        "fliglio/restfc": 20,
         "fliglio/web": 20,
         "fliglio/fltk": 20
     },
