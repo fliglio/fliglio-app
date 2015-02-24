@@ -83,21 +83,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/restfc.git",
-                "reference": "4586d004be7c34227c68b5af8d511e6beab379ca"
+                "reference": "38f56503076c7a73e3a4ae3e366ba3a4af063d8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/restfc/zipball/4586d004be7c34227c68b5af8d511e6beab379ca",
-                "reference": "4586d004be7c34227c68b5af8d511e6beab379ca",
+                "url": "https://api.github.com/repos/fliglio/restfc/zipball/38f56503076c7a73e3a4ae3e366ba3a4af063d8c",
+                "reference": "38f56503076c7a73e3a4ae3e366ba3a4af063d8c",
                 "shasum": ""
             },
             "require": {
                 "fliglio/flfc": "dev-master",
-                "fliglio/routing": "dev-master",
-                "fliglio/web": "dev-master",
                 "php": ">=5.3"
             },
             "require-dev": {
+                "fliglio/routing": "dev-master",
+                "fliglio/web": "dev-master",
                 "phpunit/phpunit": "~4.1.0"
             },
             "type": "library",
@@ -116,7 +116,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-22 15:22:11"
+            "time": "2015-02-22 16:00:49"
         },
         {
             "name": "fliglio/routing",

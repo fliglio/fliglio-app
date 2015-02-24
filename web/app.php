@@ -4,11 +4,14 @@ namespace MyApp;
 use Fliglio\Flfc\Context;
 use Fliglio\Flfc\Request;
 use Fliglio\Flfc\Response;
-use Fliglio\Flfc as flfc;
-use Fliglio\Flfc\NamespaceFcChainResolver;
-use Fliglio\Flfc\DefaultFcChainResolver;
 use Fliglio\Flfc\FcChainFactory;
 use Fliglio\Flfc\FcChainRunner;
+
+use Fliglio\Flfc\Resolvers\NamespaceFcChainResolver;
+use Fliglio\Flfc\Resolvers\DefaultFcChainResolver;
+use Fliglio\Flfc\Apps\HttpApp;
+use Fliglio\Flfc\Apps\ServeHtmlApp;
+
 use Fliglio\Routing\UriLintApp;
 use Fliglio\Routing\RoutingApp;
 use Fliglio\Routing\RouteMap;
@@ -51,8 +54,8 @@ $routeMap
 
 
 // Configure Front Controller Chain & Default Resolver
-$htmlChain = new flfc\HttpApp(new flfc\ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new flfc\HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap)));
+$htmlChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
+$apiChain  = new HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap)));
 
 FcChainFactory::addResolver(new DefaultFcChainResolver($apiChain));
 FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
