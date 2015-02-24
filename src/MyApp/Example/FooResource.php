@@ -4,36 +4,37 @@ namespace MyApp\Example;
 
 use Fliglio\Flfc\Context;
 use Fliglio\Routing\Routable;
+use Fliglio\RestFc\Input\RouteParam;
+use Fliglio\RestFc\Input\GetParam;
 
 use Fliglio\Fltk\View;
 use Fliglio\Fltk\JsonView;
 
-class FooResource implements Routable {
-
-	private $context;
+class FooResource {
 
 	public function __construct(Context $context) {
-		$this->context = $context;
 	}
 	
-	public function getFoo() {
-		$id = $this->context->getRequest()->getProp('routeParams')['id'];
+	public function getFoo(Context $context, RouteParam $id) {
 		return new JsonView(array(
-			'id' => $id,
+			'id' => $id->get(),
 			'type' => 'foo'
 		));
 	}
 
-	public function getAllFoos() {
-		return new JsonView(array(
+	public function getAllFoos(GetParam $type = null) {
+		$resp = array(
 			array(
-				'id' => 1,
-				'type' => 'foo'
+				'id' => 1
 			), array(
-				'id' => 2,
-				'type' => 'foo'
+				'id' => 2
 			)
-		));
+		);
+		if ($type != null && $type->get() == "true") {
+			$resp[0]['type'] = 'foo';
+			$resp[1]['type'] = 'foo';
+		}
+		return new JsonView($resp);
 	}
 	
 }
