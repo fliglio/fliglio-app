@@ -83,12 +83,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe"
+                "reference": "f16109a188d4679d170ec4b73c398facb034fc25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe",
-                "reference": "d79cd02c4b0f8c7bcf6f8e8aa95ee29b517aebbe",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/f16109a188d4679d170ec4b73c398facb034fc25",
+                "reference": "f16109a188d4679d170ec4b73c398facb034fc25",
                 "shasum": ""
             },
             "require": {
@@ -115,7 +115,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-20 22:37:20"
+            "time": "2015-02-22 15:18:34"
         },
         {
             "name": "fliglio/web",
