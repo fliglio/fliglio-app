@@ -4,7 +4,6 @@ namespace MyApp\Example;
 
 use Fliglio\Flfc\Request;
 use Fliglio\Flfc\Response;
-use Fliglio\Routing\Routable;
 
 use Fliglio\Fltk\View;
 use Fliglio\Fltk\JsonView;

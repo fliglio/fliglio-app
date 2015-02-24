@@ -2,10 +2,10 @@
 namespace MyApp;
 
 use Fliglio\Flfc\Context;
-use Fliglio\Flfc\Request;
+use Fliglio\Flfc\RequestFactory;
 use Fliglio\Flfc\Response;
-use Fliglio\Flfc\FcChainFactory;
-use Fliglio\Flfc\FcChainRunner;
+use Fliglio\Flfc\FcChainRegistry;
+use Fliglio\Flfc\FcDispatcherFactory;
 
 use Fliglio\Flfc\Resolvers\NamespaceFcChainResolver;
 use Fliglio\Flfc\Resolvers\DefaultFcChainResolver;
@@ -16,12 +16,14 @@ use Fliglio\Routing\UriLintApp;
 use Fliglio\Routing\RoutingApp;
 use Fliglio\Routing\RouteMap;
 use Fliglio\Routing\Type\RouteBuilder;
+use Fliglio\Routing\DiInvokerApp;
 use Fliglio\Web\HttpAttributes;
-use Fliglio\RestFc\DiInvokerApp;
 
 
-require_once __DIR__ . '/../fliglio/bootstrap.php';
+error_reporting(E_ALL | E_STRICT);
+ini_set("display_errors" , 1);
 
+require_once __DIR__ . '/../vendor/autoload.php';
 
 
 // Configure Routing
@@ -53,15 +55,16 @@ $routeMap
 
 
 
-// Configure Front Controller Chain & Default Resolver
+// Configure Front Controller Chains
 $htmlChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
 $apiChain  = new HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap)));
 
-FcChainFactory::addResolver(new DefaultFcChainResolver($apiChain));
-FcChainFactory::addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
+// Configure Resolvers
+$chains = new FcChainRegistry();
+$chains->addResolver(new DefaultFcChainResolver($apiChain));
+$chains->addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
 
-// Run App
-$context = new Context(Request::createDefault(), new Response());
-$chainRunner = new FcChainRunner();
-$chainRunner->dispatchRequest($context, "@404", "@error");
-
+// Dispatch Request
+$dispatcherFactory = new FcDispatcherFactory();
+$dispatcher = $dispatcherFactory->createDefault($chains);
+$dispatcher->dispatch();
