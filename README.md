@@ -25,8 +25,10 @@
 
 	        RewriteRule ^(.*)$ /app.php [L,QSA]
 
-	        AllowOverride all
+	        Options Indexes FollowSymLinks
+	        AllowOverride None
 	        Order allow,deny
+	        Require all granted
 	        Allow from all
 	    </Directory>
 	</VirtualHost>

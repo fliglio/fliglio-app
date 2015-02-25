@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\Example;
+namespace MyApp\RestExample;
 
 use Fliglio\Flfc\Response;
 use Fliglio\Routing\Routable;
@@ -14,14 +14,14 @@ class FooResource {
 	public function __construct() {
 	}
 	
-	public function getFoo(Response $resp, RouteParam $id) {
+	public function getFoo(RouteParam $id) {
 		return array(
 			'id' => $id->get(),
 			'type' => 'foo'
 		);
 	}
 
-	public function getAllFoos(Response $resp, GetParam $type = null) {
+	public function getAllFoos(GetParam $type = null) {
 		$arr = array(
 			array(
 				'id' => 1

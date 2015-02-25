@@ -28,27 +28,42 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 
 // Configure Routing
-$routeMap = new RouteMap();
-$routeMap
+$restRouteMap = new RouteMap();
+$restRouteMap
 	->connect('foo', RouteBuilder::get()
 		->uri('/api/foo/:id')
-		->command('MyApp\Example.FooResource.getFoo')
+		->command('MyApp\RestExample.FooResource.getFoo')
 		->method(HttpAttributes::METHOD_GET)
 		->build()
 	)
 	->connect("all-foo", RouteBuilder::get()
 		->uri('/api/foo')
-		->command('MyApp\Example.FooResource.getAllFoos')
+		->command('MyApp\RestExample.FooResource.getAllFoos')
+		->method(HttpAttributes::METHOD_GET)
+		->build()
+	);
+
+$htmlRouteMap = new RouteMap();
+$htmlRouteMap
+	->connect('home', RouteBuilder::get()
+		->uri('/')
+		->command('MyApp\HtmlExample.Controller.index')
+		->method(HttpAttributes::METHOD_GET)
+		->build()
+	)
+	->connect("topic", RouteBuilder::get()
+		->uri('/:topic')
+		->command('MyApp\HtmlExample.Controller.topic')
 		->method(HttpAttributes::METHOD_GET)
 		->build()
 	)
 	->connect("error", RouteBuilder::get()
-		->catchNone()
-		->command('MyApp\Example.ErrorResource.handleError')
+		->command('MyApp\HtmlExample.Errors.handleError')
 		->build()
 	)
 	->connect("404", RouteBuilder::get()
-		->command('MyApp\Example.ErrorResource.handlePageNotFound')
+		->catchAll()
+		->command('MyApp\HtmlExample.Errors.handlePageNotFound')
 		->build()
 	);
 
@@ -56,12 +71,13 @@ $routeMap
 
 
 // Configure Front Controller Chains
-$htmlChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $routeMap))));
+$staticChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
+$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $restRouteMap))));
+$htmlChain  = new HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $htmlRouteMap)));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();
-$chains->addResolver(new DefaultFcChainResolver($apiChain));
+$chains->addResolver(new DefaultFcChainResolver($htmlChain));
 $chains->addResolver(new NamespaceFcChainResolver($apiChain, 'api'));
 
 // Dispatch Request
