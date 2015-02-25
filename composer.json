@@ -10,6 +10,7 @@
 		"php": ">=5.3",
 		"fliglio/flfc":    "dev-master",
 		"fliglio/routing": "dev-master",
+		"fliglio/http":    "dev-master",
 		"fliglio/web":     "dev-master"
 	},
 	"minimum-stability" : "dev",

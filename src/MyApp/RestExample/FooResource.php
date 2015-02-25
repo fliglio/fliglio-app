@@ -2,7 +2,6 @@
 
 namespace MyApp\RestExample;
 
-use Fliglio\Flfc\Response;
 use Fliglio\Routing\Routable;
 use Fliglio\Routing\Input\RouteParam;
 use Fliglio\Routing\Input\GetParam;

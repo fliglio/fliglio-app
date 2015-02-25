@@ -71,9 +71,8 @@ $htmlRouteMap
 
 
 // Configure Front Controller Chains
-$staticChain = new HttpApp(new ServeHtmlApp(dirname(__FILE__) . '/index.html'));
-$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $restRouteMap))));
 $htmlChain  = new HttpApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $htmlRouteMap)));
+$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DiInvokerApp(), $restRouteMap))));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();
