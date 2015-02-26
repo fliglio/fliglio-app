@@ -29,6 +29,12 @@ class Controller {
 				<li><a href="/galaxy?name=Milky%20Way">to the Milky Way</a></li>
 				<li><a href="/universe?name=*">to the universe</a></li>
 			</ul>
+			<p>REST api</p>
+			<ul>
+				<li><a href="/api/foo/12">/api/foo/12</a></li>
+				<li><a href="/api/foo">/api/foo</a></li>
+				<li><a href="/api/foo?type=true">/api/foo?type=true</a></li>
+			</ul>
 		');
 	}
 

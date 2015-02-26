@@ -13,7 +13,7 @@ use Fliglio\Flfc\Apps\HttpApp;
 use Fliglio\Flfc\Apps\RestApp;
 use Fliglio\Flfc\Apps\ServeHtmlApp;
 
-use Fliglio\Routing\UriLintApp;
+use Fliglio\Routing\UrlLintApp;
 use Fliglio\Routing\RoutingApp;
 use Fliglio\Routing\RouteMap;
 use Fliglio\Routing\Type\RouteBuilder;
@@ -71,8 +71,8 @@ $htmlRouteMap
 
 
 // Configure Front Controller Chains
-$htmlChain  = new HttpApp(new UriLintApp(new RoutingApp(new DefaultInvokerApp(), $htmlRouteMap)));
-$apiChain  = new HttpApp(new RestApp(new UriLintApp(new RoutingApp(new DefaultInvokerApp(), $restRouteMap))));
+$htmlChain  = new HttpApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $htmlRouteMap)));
+$apiChain  = new HttpApp(new RestApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $restRouteMap))));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();
