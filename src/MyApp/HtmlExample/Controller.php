@@ -7,7 +7,7 @@ use Fliglio\Routing\Routable;
 use Fliglio\Routing\Input\RouteParam;
 use Fliglio\Routing\Input\GetParam;
 
-use Fliglio\Flfc\DefaultView;
+use Fliglio\Flfc\DefaultBody;
 
 class Controller {
 
@@ -15,7 +15,7 @@ class Controller {
 	}
 	
 	public function index(ResponseWriter $resp) {
-		return new DefaultView('
+		return new DefaultBody('
 			<h1>Fliglio</h1>
 			<p>Say Hello</p>
 			<ul>
@@ -36,7 +36,7 @@ class Controller {
 		if (!is_null($name) && $name->get() == 'oops') {
 			throw new \Exception('Oops!');
 		}
-		return new DefaultView(sprintf(
+		return new DefaultBody(sprintf(
 			"<h3>Hello %s</h3>",
 			$name == null ? $topic->get() : $name->get()
 		));
