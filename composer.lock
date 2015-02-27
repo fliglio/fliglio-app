@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "6144254d6779124c676e377b880323fe26062994"
+                "reference": "e9b7b9900613d61d6b2a0a96b9059388866dfbbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/6144254d6779124c676e377b880323fe26062994",
-                "reference": "6144254d6779124c676e377b880323fe26062994",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/e9b7b9900613d61d6b2a0a96b9059388866dfbbe",
+                "reference": "e9b7b9900613d61d6b2a0a96b9059388866dfbbe",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-26 18:53:53"
+            "time": "2015-02-27 16:46:40"
         },
         {
             "name": "fliglio/http",
@@ -48,12 +48,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/http.git",
-                "reference": "d8edbb120ced76162e97f470a988209e74a84af8"
+                "reference": "52acc248cd5cf4669bc79376d63ef0a07882f319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/http/zipball/d8edbb120ced76162e97f470a988209e74a84af8",
-                "reference": "d8edbb120ced76162e97f470a988209e74a84af8",
+                "url": "https://api.github.com/repos/fliglio/http/zipball/52acc248cd5cf4669bc79376d63ef0a07882f319",
+                "reference": "52acc248cd5cf4669bc79376d63ef0a07882f319",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-26 17:10:35"
+            "time": "2015-02-27 16:46:21"
         },
         {
             "name": "fliglio/routing",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "36fa3c00cf3b30f31ab5f7cd85acfceabb81eb34"
+                "reference": "a0166543e80a0659e2d28375e76f8051f5393451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/36fa3c00cf3b30f31ab5f7cd85acfceabb81eb34",
-                "reference": "36fa3c00cf3b30f31ab5f7cd85acfceabb81eb34",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/a0166543e80a0659e2d28375e76f8051f5393451",
+                "reference": "a0166543e80a0659e2d28375e76f8051f5393451",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-26 22:46:59"
+            "time": "2015-02-26 22:49:51"
         },
         {
             "name": "fliglio/web",
@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "b13728698d02c8231270293b1826e4723e2886d1"
+                "reference": "2c5453b74a5e69f2d9b69544b95ad02731d09cdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/b13728698d02c8231270293b1826e4723e2886d1",
-                "reference": "b13728698d02c8231270293b1826e4723e2886d1",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/2c5453b74a5e69f2d9b69544b95ad02731d09cdb",
+                "reference": "2c5453b74a5e69f2d9b69544b95ad02731d09cdb",
                 "shasum": ""
             },
             "require": {
@@ -158,7 +158,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-26 22:47:47"
+            "time": "2015-02-27 16:46:30"
         }
     ],
     "packages-dev": [],
