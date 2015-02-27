@@ -2,7 +2,6 @@
 
 namespace MyApp\HtmlExample;
 
-use Fliglio\Http\ResponseWriter;
 use Fliglio\Routing\Routable;
 use Fliglio\Routing\Input\RouteParam;
 use Fliglio\Routing\Input\GetParam;
@@ -14,7 +13,7 @@ class Controller {
 	public function __construct() {
 	}
 	
-	public function index(ResponseWriter $resp) {
+	public function index() {
 		return new DefaultBody('
 			<h1>Fliglio</h1>
 			<p>Say Hello</p>
