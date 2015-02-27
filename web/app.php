@@ -18,7 +18,7 @@ use Fliglio\Routing\RoutingApp;
 use Fliglio\Routing\RouteMap;
 use Fliglio\Routing\Type\RouteBuilder;
 use Fliglio\Routing\DefaultInvokerApp;
-use Fliglio\Web\HttpAttributes;
+use Fliglio\Http\Http;
 
 
 error_reporting(E_ALL | E_STRICT);
@@ -33,13 +33,13 @@ $restRouteMap
 	->connect('foo', RouteBuilder::get()
 		->uri('/api/foo/:id')
 		->command('MyApp\RestExample.FooResource.getFoo')
-		->method(HttpAttributes::METHOD_GET)
+		->method(Http::METHOD_GET)
 		->build()
 	)
 	->connect("all-foo", RouteBuilder::get()
 		->uri('/api/foo')
 		->command('MyApp\RestExample.FooResource.getAllFoos')
-		->method(HttpAttributes::METHOD_GET)
+		->method(Http::METHOD_GET)
 		->build()
 	);
 
@@ -48,13 +48,13 @@ $htmlRouteMap
 	->connect('home', RouteBuilder::get()
 		->uri('/')
 		->command('MyApp\HtmlExample.Controller.index')
-		->method(HttpAttributes::METHOD_GET)
+		->method(Http::METHOD_GET)
 		->build()
 	)
 	->connect("topic", RouteBuilder::get()
 		->uri('/:topic')
 		->command('MyApp\HtmlExample.Controller.topic')
-		->method(HttpAttributes::METHOD_GET)
+		->method(Http::METHOD_GET)
 		->build()
 	)
 	->connect("error", RouteBuilder::get()
