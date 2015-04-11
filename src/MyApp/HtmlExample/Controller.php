@@ -32,7 +32,7 @@ class Controller {
 			<ul>
 				<li><a href="/api/foo/12">/api/foo/12</a></li>
 				<li><a href="/api/foo">/api/foo</a></li>
-				<li><a href="/api/foo?type=true">/api/foo?type=true</a></li>
+				<li><a href="/api/foo?type=foo">/api/foo?type=foo</a></li>
 			</ul>
 		');
 	}
