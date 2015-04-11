@@ -8,32 +8,45 @@ use Fliglio\Routing\Input\GetParam;
 
 use Fliglio\Fltk\View;
 
+use MyApp\RestExample\FooApi\FooApi;
 class FooResource {
 
 	public function __construct() {
 	}
 	
 	public function getFoo(RouteParam $id) {
-		return array(
-			'id' => $id->get(),
-			'type' => 'foo'
-		);
+		$f = new FooApi();
+		$f->setId($id->get());
+		$f->setType('foo');
+		return $f;
 	}
 
 	public function getAllFoos(GetParam $type = null) {
-		$arr = array(
-			array(
-				'id' => 1
-			), array(
-				'id' => 2
-			)
-		);
-		if ($type != null && $type->get() == "true") {
-			$arr[0]['type'] = 'foo';
-			$arr[1]['type'] = 'foo';
-		}
+		$f = new FooApi();
+		$f->setId(1);
+		$f->setType('foo');
 
-		return $arr;
+		$f2 = new FooApi();
+		$f2->setId(2);
+		$f2->setType('bar');
+
+		if (!is_null($type)) {
+			switch ($type->get()) {
+			case 'foo':
+				return array($f);
+			case 'bar':
+				return array($f2);
+			default:
+				return array();
+			}
+		}
+		return array($f, $f2);
 	}
 	
+	public function addFoo(FooApi $foo) {
+		//add foo...
+		$foo->setId(321);
+		return $foo;
+	}
+
 }

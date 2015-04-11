@@ -20,6 +20,7 @@ use Fliglio\Routing\Type\RouteBuilder;
 use Fliglio\Routing\DefaultInvokerApp;
 use Fliglio\Http\Http;
 
+use MyApp\RestExample\FooApi\FooApiMapper;
 
 error_reporting(E_ALL | E_STRICT);
 ini_set("display_errors" , 1);
@@ -34,6 +35,12 @@ $restRouteMap
 		->uri('/api/foo/:id')
 		->command('MyApp\RestExample.FooResource.getFoo')
 		->method(Http::METHOD_GET)
+		->build()
+	)
+	->connect('add-foo', RouteBuilder::get()
+		->uri('/api/foo')
+		->command('MyApp\RestExample.FooResource.addFoo')
+		->method(Http::METHOD_POST)
 		->build()
 	)
 	->connect("all-foo", RouteBuilder::get()
@@ -72,7 +79,11 @@ $htmlRouteMap
 
 // Configure Front Controller Chains
 $htmlChain  = new HttpApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $htmlRouteMap)));
-$apiChain  = new HttpApp(new RestApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $restRouteMap))));
+
+$invokerApp = new DefaultInvokerApp();
+$invokerApp->addMapper('MyApp\RestExample\FooApi\FooApi', new FooApiMapper());
+
+$apiChain  = new HttpApp(new RestApp(new UrlLintApp(new RoutingApp($invokerApp, $restRouteMap))));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();

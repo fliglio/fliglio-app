@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "48a05ceb425100be3f75148e1ca03a7aab151bcc"
+                "reference": "d515717938a647366365bfbbae922e6139c65d80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/48a05ceb425100be3f75148e1ca03a7aab151bcc",
-                "reference": "48a05ceb425100be3f75148e1ca03a7aab151bcc",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/d515717938a647366365bfbbae922e6139c65d80",
+                "reference": "d515717938a647366365bfbbae922e6139c65d80",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-27 16:51:23"
+            "time": "2015-03-04 21:06:44"
         },
         {
             "name": "fliglio/http",
@@ -48,12 +48,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/http.git",
-                "reference": "9b865f520f908941b2145bfa5e8a022de5f608c4"
+                "reference": "a32580bcc93b8282048c1552305d6c64bc3f8615"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/http/zipball/9b865f520f908941b2145bfa5e8a022de5f608c4",
-                "reference": "9b865f520f908941b2145bfa5e8a022de5f608c4",
+                "url": "https://api.github.com/repos/fliglio/http/zipball/a32580bcc93b8282048c1552305d6c64bc3f8615",
+                "reference": "a32580bcc93b8282048c1552305d6c64bc3f8615",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-27 16:50:24"
+            "time": "2015-03-04 18:08:24"
         },
         {
             "name": "fliglio/routing",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "0dae971d4dd0c287a812f3dcba4fcc15ba72dbc6"
+                "reference": "e87b405ff18633047d87b9fa6123c5a8336ce874"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/0dae971d4dd0c287a812f3dcba4fcc15ba72dbc6",
-                "reference": "0dae971d4dd0c287a812f3dcba4fcc15ba72dbc6",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/e87b405ff18633047d87b9fa6123c5a8336ce874",
+                "reference": "e87b405ff18633047d87b9fa6123c5a8336ce874",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-27 16:47:49"
+            "time": "2015-03-04 21:05:59"
         },
         {
             "name": "fliglio/web",
@@ -127,15 +127,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "2c5453b74a5e69f2d9b69544b95ad02731d09cdb"
+                "reference": "ea96989292dbbadf60feaede21e0e5d24949c1d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/2c5453b74a5e69f2d9b69544b95ad02731d09cdb",
-                "reference": "2c5453b74a5e69f2d9b69544b95ad02731d09cdb",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/ea96989292dbbadf60feaede21e0e5d24949c1d1",
+                "reference": "ea96989292dbbadf60feaede21e0e5d24949c1d1",
                 "shasum": ""
             },
             "require": {
+                "fliglio/http": "dev-master",
                 "lib-curl": "*",
                 "php": ">=5.3"
             },
@@ -158,7 +159,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-02-27 16:46:30"
+            "time": "2015-03-04 21:07:28"
         }
     ],
     "packages-dev": [],
