@@ -16,19 +16,17 @@ class FooApiMapper implements ApiMapper {
 	}
 	public function marshal($fooEntity) {
 		return array(
-			'id' => $fooEntity->getId(),
-			'type' => $fooEntity->getType()
+			'id' => $fooEntity->id,
+			'type' => $fooEntity->type
 		);
 	}
 
-	public function unmarshal($fooJson) {
-		$fooArray = json_decode($fooJson, true);
-
+	public function unmarshal($fooArray) {
 		$f = new FooApi();
 		if (isset($fooArray['id'])) {
-			$f->setId($fooArray['id']);
+			$f->id = $fooArray['id'];
 		}
-		$f->setType($fooArray['type']);
+		$f->type = $fooArray['type'];
 		return $f;
 	}
 }
