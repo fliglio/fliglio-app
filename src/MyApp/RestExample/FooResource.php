@@ -3,9 +3,9 @@
 namespace MyApp\RestExample;
 
 use Fliglio\Routing\Routable;
-use Fliglio\Routing\Input\Body;
-use Fliglio\Routing\Input\RouteParam;
-use Fliglio\Routing\Input\GetParam;
+use Fliglio\Web\Body;
+use Fliglio\Web\RouteParam;
+use Fliglio\Web\GetParam;
 
 use Fliglio\Fltk\View;
 

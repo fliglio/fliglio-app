@@ -79,11 +79,7 @@ $htmlRouteMap
 
 // Configure Front Controller Chains
 $htmlChain  = new HttpApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $htmlRouteMap)));
-
-$invokerApp = new DefaultInvokerApp();
-$invokerApp->addMapper('MyApp\RestExample\FooApi\FooApi', new FooApiMapper());
-
-$apiChain  = new HttpApp(new RestApp(new UrlLintApp(new RoutingApp($invokerApp, $restRouteMap))));
+$apiChain  = new HttpApp(new RestApp(new UrlLintApp(new RoutingApp(new DefaultInvokerApp(), $restRouteMap))));
 
 // Configure Resolvers
 $chains = new FcChainRegistry();

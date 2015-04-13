@@ -2,7 +2,7 @@
 
 namespace MyApp\RestExample\FooApi;
 
-use Fliglio\Routing\ApiMapper;
+use Fliglio\Web\ApiMapper;
 
 
 class FooApiMapper implements ApiMapper {
