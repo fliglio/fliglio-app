@@ -11,7 +11,10 @@
 		"fliglio/flfc":    "dev-master",
 		"fliglio/routing": "dev-master",
 		"fliglio/http":    "dev-master",
-		"fliglio/web":     "dev-master"
+		"fliglio/web":     "dev-master",
+        "symfony/validator": "2.*",
+        "doctrine/annotations": "1.*",
+        "doctrine/cache": "1.*"
 	},
 	"minimum-stability" : "dev",
     "autoload": {
