@@ -12,6 +12,9 @@
 		"fliglio/routing": "2.1.*",
 		"fliglio/http":    "2.1.*",
 		"fliglio/web":     "2.1.*"
+        	"symfony/validator": "2.*",
+        	"doctrine/annotations": "1.*",
+        	"doctrine/cache": "1.*"
 	},
 	"minimum-stability" : "dev",
     "autoload": {

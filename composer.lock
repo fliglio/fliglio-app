@@ -4,20 +4,212 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb6d34334e2ac8ba2b90c7de14544b6f",
+    "hash": "67c38fc58b7b1ae6b1d06610e5010c9b",
     "packages": [
+        {
+            "name": "doctrine/annotations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b5202eb9e83f8db52e0e58867e0a46e63be8332e",
+                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Annotations\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2014-12-23 22:40:37"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~1.0",
+                "satooshi/php-coveralls": "~0.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Cache\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2015-04-15 00:11:59"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
+        },
         {
             "name": "fliglio/flfc",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "6ae5daad445dab2be218db4ff58ea9a453f039bf"
+                "reference": "472ba96e5b70aabb80013515829610047db855a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/6ae5daad445dab2be218db4ff58ea9a453f039bf",
-                "reference": "6ae5daad445dab2be218db4ff58ea9a453f039bf",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/472ba96e5b70aabb80013515829610047db855a7",
+                "reference": "472ba96e5b70aabb80013515829610047db855a7",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +235,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-13 18:08:57"
+            "time": "2015-04-13 18:25:58"
         },
         {
             "name": "fliglio/http",
@@ -89,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "ebad7aa1545fcb8625ae140f845af9c8e5fa426c"
+                "reference": "7a148c932dbc46333c739db14700fa76886bd6da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/ebad7aa1545fcb8625ae140f845af9c8e5fa426c",
-                "reference": "ebad7aa1545fcb8625ae140f845af9c8e5fa426c",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/7a148c932dbc46333c739db14700fa76886bd6da",
+                "reference": "7a148c932dbc46333c739db14700fa76886bd6da",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +314,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-13 15:54:20"
+            "time": "2015-04-15 15:14:32"
         },
         {
             "name": "fliglio/web",
@@ -130,19 +322,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "6b2834857723128aa38d6533a769934d134488cc"
+                "reference": "0918a1257cf75d4e7b22ea2965ee53b335b52c46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/6b2834857723128aa38d6533a769934d134488cc",
-                "reference": "6b2834857723128aa38d6533a769934d134488cc",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/0918a1257cf75d4e7b22ea2965ee53b335b52c46",
+                "reference": "0918a1257cf75d4e7b22ea2965ee53b335b52c46",
                 "shasum": ""
             },
             "require": {
+                "doctrine/annotations": "1.*",
+                "doctrine/cache": "1.*",
                 "fliglio/http": "dev-master",
                 "lib-curl": "*",
                 "php": ">=5.3",
-                "werx/validation": "1.*"
+                "symfony/validator": "2.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.1.0"
@@ -163,35 +357,50 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-13 18:20:36"
+            "time": "2015-04-15 19:23:55"
         },
         {
-            "name": "werx/validation",
-            "version": "1.2.0",
+            "name": "symfony/translation",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
-                "url": "https://github.com/werx/validation.git",
-                "reference": "6143a3543beb8ef66904ea4bc22119c6c7acb105"
+                "url": "https://github.com/symfony/Translation.git",
+                "reference": "860910a026649ebb050f926c4c73cdbef6223eb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/werx/validation/zipball/6143a3543beb8ef66904ea4bc22119c6c7acb105",
-                "reference": "6143a3543beb8ef66904ea4bc22119c6c7acb105",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/860910a026649ebb050f926c4c73cdbef6223eb9",
+                "reference": "860910a026649ebb050f926c4c73cdbef6223eb9",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 5.4"
+                "php": ">=5.5.9"
+            },
+            "conflict": {
+                "symfony/config": "<2.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.4",
-                "squizlabs/php_codesniffer": "~2.2"
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/intl": "~2.8|~3.0",
+                "symfony/phpunit-bridge": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "suggest": {
+                "psr/log": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "autoload": {
-                "psr-4": {
-                    "werx\\Validation\\": "src/",
-                    "werx\\Validation\\Tests\\": "tests/",
-                    "werx\\Validation\\Tests\\Rulesets\\": "tests/Rulesets/"
+                "psr-0": {
+                    "Symfony\\Component\\Translation\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -200,20 +409,88 @@
             ],
             "authors": [
                 {
-                    "name": "Josh Moody",
-                    "email": "josh@moody.io"
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
-            "description": "Validate individual data elements or group validation rules into sets to validate a form.",
-            "keywords": [
-                "form",
-                "rules",
-                "ruleset",
-                "validate",
-                "validation",
-                "validator"
+            "description": "Symfony Translation Component",
+            "homepage": "http://symfony.com",
+            "time": "2015-04-10 07:31:54"
+        },
+        {
+            "name": "symfony/validator",
+            "version": "2.8.x-dev",
+            "target-dir": "Symfony/Component/Validator",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Validator.git",
+                "reference": "9663b595bffb5828471843cc37991e848313204a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Validator/zipball/9663b595bffb5828471843cc37991e848313204a",
+                "reference": "9663b595bffb5828471843cc37991e848313204a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/translation": "~2.4|~3.0.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "doctrine/cache": "~1.0",
+                "egulias/email-validator": "~1.2,>=1.2.1",
+                "symfony/config": "~2.2|~3.0.0",
+                "symfony/expression-language": "~2.4|~3.0.0",
+                "symfony/http-foundation": "~2.1|~3.0.0",
+                "symfony/intl": "~2.3|~3.0.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0.0",
+                "symfony/property-access": "~2.3|~3.0.0",
+                "symfony/yaml": "~2.0,>=2.0.5|~3.0.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
+                "doctrine/cache": "For using the default cached annotation reader and metadata cache.",
+                "egulias/email-validator": "Strict (RFC compliant) email validation",
+                "symfony/config": "",
+                "symfony/expression-language": "For using the 2.4 Expression validator",
+                "symfony/http-foundation": "",
+                "symfony/intl": "",
+                "symfony/property-access": "For using the 2.4 Validator API",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Validator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
             ],
-            "time": "2015-01-26 01:39:57"
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Validator Component",
+            "homepage": "http://symfony.com",
+            "time": "2015-04-11 08:55:16"
         }
     ],
     "packages-dev": [],
