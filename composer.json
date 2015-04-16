@@ -1,5 +1,6 @@
 {
 	"name": "fliglio/app",
+	"description": "Demo Application for Fliglio Framework",
 	"type": "project",
 	"license": "GPL-3.0+",
 	"authors": [{
