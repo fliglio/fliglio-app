@@ -3,7 +3,7 @@
 namespace MyApp\HtmlExample;
 
 use Fliglio\Routing\Routable;
-use Fliglio\Routing\Input\RouteParam;
+use Fliglio\Routing\Input\PathParam;
 use Fliglio\Routing\Input\GetParam;
 
 use Fliglio\Flfc\DefaultBody;
@@ -37,7 +37,7 @@ class Controller {
 		');
 	}
 
-	public function topic(RouteParam $topic, GetParam $name = null) {
+	public function topic(PathParam $topic, GetParam $name = null) {
 		if (!is_null($name) && $name->get() == 'oops') {
 			throw new \Exception('Oops!');
 		}

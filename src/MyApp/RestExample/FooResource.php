@@ -4,7 +4,7 @@ namespace MyApp\RestExample;
 
 use Fliglio\Routing\Routable;
 use Fliglio\Web\Body;
-use Fliglio\Web\RouteParam;
+use Fliglio\Web\PathParam;
 use Fliglio\Web\GetParam;
 
 use Fliglio\Fltk\View;
@@ -20,7 +20,7 @@ class FooResource {
 	public function __construct() {
 	}
 	
-	public function getFoo(RouteParam $id) {
+	public function getFoo(PathParam $id) {
 		$f = new FooApi();
 		$f->id = $id->get();
 		$f->type = 'foo';

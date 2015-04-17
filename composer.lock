@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "67c38fc58b7b1ae6b1d06610e5010c9b",
+    "hash": "873a5ba53b8f301d99311c896fd2a157",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "472ba96e5b70aabb80013515829610047db855a7"
+                "reference": "b06abdf16994218f9abe6147813fef14d6ec7a4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/472ba96e5b70aabb80013515829610047db855a7",
-                "reference": "472ba96e5b70aabb80013515829610047db855a7",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/b06abdf16994218f9abe6147813fef14d6ec7a4f",
+                "reference": "b06abdf16994218f9abe6147813fef14d6ec7a4f",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-13 18:25:58"
+            "time": "2015-04-16 03:52:05"
         },
         {
             "name": "fliglio/http",
@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/http.git",
-                "reference": "e649cf284015f5e03f8aa8f36b0370f0c735d54f"
+                "reference": "c419e15d844ec63ae36689037a701eb343ba5977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/http/zipball/e649cf284015f5e03f8aa8f36b0370f0c735d54f",
-                "reference": "e649cf284015f5e03f8aa8f36b0370f0c735d54f",
+                "url": "https://api.github.com/repos/fliglio/http/zipball/c419e15d844ec63ae36689037a701eb343ba5977",
+                "reference": "c419e15d844ec63ae36689037a701eb343ba5977",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-13 18:15:04"
+            "time": "2015-04-16 03:52:24"
         },
         {
             "name": "fliglio/routing",
@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "7a148c932dbc46333c739db14700fa76886bd6da"
+                "reference": "c2e6180f3dbde97eb2a31b44004fe2e70c217dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/7a148c932dbc46333c739db14700fa76886bd6da",
-                "reference": "7a148c932dbc46333c739db14700fa76886bd6da",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/c2e6180f3dbde97eb2a31b44004fe2e70c217dcb",
+                "reference": "c2e6180f3dbde97eb2a31b44004fe2e70c217dcb",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-15 15:14:32"
+            "time": "2015-04-16 21:22:07"
         },
         {
             "name": "fliglio/web",
@@ -322,12 +322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "0918a1257cf75d4e7b22ea2965ee53b335b52c46"
+                "reference": "99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/0918a1257cf75d4e7b22ea2965ee53b335b52c46",
-                "reference": "0918a1257cf75d4e7b22ea2965ee53b335b52c46",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f",
+                "reference": "99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f",
                 "shasum": ""
             },
             "require": {
@@ -357,7 +357,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-15 19:23:55"
+            "time": "2015-04-16 03:53:08"
         },
         {
             "name": "symfony/translation",
