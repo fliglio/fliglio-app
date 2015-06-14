@@ -243,17 +243,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/fli.git",
-                "reference": "f2ce4df7c819b5dace47d9992576547b7b4ae21a"
+                "reference": "aa9c1fa427f34fff57715d33b87036a838961b78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/fli/zipball/f2ce4df7c819b5dace47d9992576547b7b4ae21a",
-                "reference": "f2ce4df7c819b5dace47d9992576547b7b4ae21a",
+                "url": "https://api.github.com/repos/fliglio/fli/zipball/aa9c1fa427f34fff57715d33b87036a838961b78",
+                "reference": "aa9c1fa427f34fff57715d33b87036a838961b78",
                 "shasum": ""
             },
             "require": {
                 "fliglio/flfc": "dev-master",
                 "fliglio/http": "dev-master",
+                "fliglio/routing": "dev-fli",
                 "fliglio/web": "dev-master",
                 "php": ">=5.3"
             },
@@ -263,7 +264,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Fliglio\\Routing\\": ""
+                    "Fliglio\\Fli\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -276,7 +277,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-06-13 14:55:59"
+            "time": "2015-06-14 14:16:44"
         },
         {
             "name": "fliglio/http",

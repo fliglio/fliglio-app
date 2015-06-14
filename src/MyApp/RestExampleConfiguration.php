@@ -2,6 +2,8 @@
 
 namespace MyApp;
 
+use Fliglio\Http\Http;
+use Fliglio\Routing\Type\RouteBuilder;
 use Fliglio\Fli\DefaultConfiguration;
 
 class RestExampleConfiguration extends DefaultConfiguration {
