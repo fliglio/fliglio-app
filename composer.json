@@ -10,9 +10,9 @@
 	"require": {
 		"php": ">=5.3",
 		"fliglio/fli":    "dev-master",
-		"fliglio/flfc":    "dev-master",
+		"fliglio/flfc":    "dev-fli",
 		"fliglio/routing": "dev-fli",
-		"fliglio/http":    "dev-master",
+		"fliglio/http":    "dev-fli",
 		"fliglio/web":     "dev-master",
         "symfony/validator": "2.*",
         "doctrine/annotations": "1.*",
