@@ -3,9 +3,9 @@
 namespace MyApp;
 
 use Fliglio\Fli\DefaultResolverApp;
-use Fliglio\Fli\FliMux;
+use Fliglio\Fli\ResolverAppMux;
 
-class RestExampleService extends FliMux {
+class RestExampleApplication extends ResolverAppMux {
 	public function __construct() {
 		parent::__construct();
 

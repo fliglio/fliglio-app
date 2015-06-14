@@ -18,6 +18,6 @@ AnnotationRegistry::registerAutoloadNamespace(
 
 
 
-$svc = new RestExampleService();
+$svc = new RestExampleApplication();
 $svc->run();
 
