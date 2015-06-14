@@ -18,12 +18,12 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 
 EXPOSE 80
 
-ADD ./ /var/www/
+#ADD ./ /var/www/
 
 ADD apache-vhost.conf /etc/apache2/sites-enabled/000-default.conf
 
 
-
+VOLUME /var/www/
 # Launch apache when launching the container
 
 ENTRYPOINT ["/usr/sbin/apache2ctl"]

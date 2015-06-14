@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "873a5ba53b8f301d99311c896fd2a157",
+    "hash": "6dc192229513ff8f4be50c62e1db1708",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -238,17 +238,58 @@
             "time": "2015-05-14 19:56:23"
         },
         {
+            "name": "fliglio/fli",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fliglio/fli.git",
+                "reference": "f2ce4df7c819b5dace47d9992576547b7b4ae21a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fliglio/fli/zipball/f2ce4df7c819b5dace47d9992576547b7b4ae21a",
+                "reference": "f2ce4df7c819b5dace47d9992576547b7b4ae21a",
+                "shasum": ""
+            },
+            "require": {
+                "fliglio/flfc": "dev-master",
+                "fliglio/http": "dev-master",
+                "fliglio/web": "dev-master",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Fliglio\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Schwartz",
+                    "email": "benschw@gmail.com"
+                }
+            ],
+            "time": "2015-06-13 14:55:59"
+        },
+        {
             "name": "fliglio/http",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/http.git",
-                "reference": "44a987db3357845b55fe154e2686d02d78cc31c6"
+                "reference": "a73265131048c2b6bdbd490a73abafe5bc7fd59e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/http/zipball/44a987db3357845b55fe154e2686d02d78cc31c6",
-                "reference": "44a987db3357845b55fe154e2686d02d78cc31c6",
+                "url": "https://api.github.com/repos/fliglio/http/zipball/a73265131048c2b6bdbd490a73abafe5bc7fd59e",
+                "reference": "a73265131048c2b6bdbd490a73abafe5bc7fd59e",
                 "shasum": ""
             },
             "require": {
@@ -273,11 +314,11 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-17 15:06:57"
+            "time": "2015-06-10 14:14:29"
         },
         {
             "name": "fliglio/routing",
-            "version": "dev-master",
+            "version": "dev-fli",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
@@ -322,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "33a74b507051b8408fd592c0ae548c0e05334ce7"
+                "reference": "af69c6be2f55493252b7756268663704bbbdea0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/33a74b507051b8408fd592c0ae548c0e05334ce7",
-                "reference": "33a74b507051b8408fd592c0ae548c0e05334ce7",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/af69c6be2f55493252b7756268663704bbbdea0f",
+                "reference": "af69c6be2f55493252b7756268663704bbbdea0f",
                 "shasum": ""
             },
             "require": {
@@ -357,7 +398,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-05-15 14:41:23"
+            "time": "2015-06-10 14:21:54"
         },
         {
             "name": "symfony/translation",
@@ -365,12 +406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "fa1c9e185b7addf06571be1ffcbaa27afea7fe9a"
+                "reference": "95f9b028555f55b78b465a2488f1a38442acc412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/fa1c9e185b7addf06571be1ffcbaa27afea7fe9a",
-                "reference": "fa1c9e185b7addf06571be1ffcbaa27afea7fe9a",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/95f9b028555f55b78b465a2488f1a38442acc412",
+                "reference": "95f9b028555f55b78b465a2488f1a38442acc412",
                 "shasum": ""
             },
             "require": {
@@ -418,7 +459,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-05 16:29:33"
+            "time": "2015-06-11 19:27:42"
         },
         {
             "name": "symfony/validator",
@@ -495,6 +536,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "fliglio/fli": 20,
         "fliglio/flfc": 20,
         "fliglio/routing": 20,
         "fliglio/http": 20,

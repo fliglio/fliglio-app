@@ -11,6 +11,9 @@
 	docker build -t benschw/fl .
 	docker run -t -d -p 80 benschw/fl
 
+	
+	sudo docker build -t test . && sudo docker kill test && sudo docker rm test  && sudo docker run -t -d -p 80:80 -v /home/ben/dev/fliglio-app/:/var/www/ --name test test
+
 ### vhost-myapp
 
 	<VirtualHost *:80>
@@ -37,3 +40,5 @@
 ### Try it out
 
 	curl http://fl.local/api/foo
+
+

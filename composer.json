@@ -11,7 +11,7 @@
 		"php": ">=5.3",
 		"fliglio/fli":    "dev-master",
 		"fliglio/flfc":    "dev-master",
-		"fliglio/routing": "dev-master",
+		"fliglio/routing": "dev-fli",
 		"fliglio/http":    "dev-master",
 		"fliglio/web":     "dev-master",
         "symfony/validator": "2.*",
