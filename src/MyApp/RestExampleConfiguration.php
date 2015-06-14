@@ -27,10 +27,6 @@ class RestExampleConfiguration extends DefaultConfiguration {
 				->build(),
 		];
 	}
-
-//	public function getInjectables() {
-//		return (new DefaultInjectablesFactory())->createAll();
-//	}
 }
 
 
