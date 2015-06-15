@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "873a5ba53b8f301d99311c896fd2a157",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e"
+                "reference": "c8927ad70c6fce36b3af52c17ed996c9aa4de89b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b5202eb9e83f8db52e0e58867e0a46e63be8332e",
-                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c8927ad70c6fce36b3af52c17ed996c9aa4de89b",
+                "reference": "c8927ad70c6fce36b3af52c17ed996c9aa4de89b",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-12-23 22:40:37"
+            "time": "2015-05-13 13:47:35"
         },
         {
             "name": "doctrine/cache",
@@ -80,12 +80,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+                "reference": "9930e3367777a8727e229f5126c5299890d700bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/9930e3367777a8727e229f5126c5299890d700bb",
+                "reference": "9930e3367777a8727e229f5126c5299890d700bb",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-04-15 00:11:59"
+            "time": "2015-05-13 10:08:10"
         },
         {
             "name": "doctrine/lexer",
@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/flfc.git",
-                "reference": "b06abdf16994218f9abe6147813fef14d6ec7a4f"
+                "reference": "0554153e6dbde48bd8fce01a6b513ca1fafed87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/flfc/zipball/b06abdf16994218f9abe6147813fef14d6ec7a4f",
-                "reference": "b06abdf16994218f9abe6147813fef14d6ec7a4f",
+                "url": "https://api.github.com/repos/fliglio/flfc/zipball/0554153e6dbde48bd8fce01a6b513ca1fafed87c",
+                "reference": "0554153e6dbde48bd8fce01a6b513ca1fafed87c",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-16 03:52:05"
+            "time": "2015-05-14 19:56:23"
         },
         {
             "name": "fliglio/http",
@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/http.git",
-                "reference": "c419e15d844ec63ae36689037a701eb343ba5977"
+                "reference": "a73265131048c2b6bdbd490a73abafe5bc7fd59e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/http/zipball/c419e15d844ec63ae36689037a701eb343ba5977",
-                "reference": "c419e15d844ec63ae36689037a701eb343ba5977",
+                "url": "https://api.github.com/repos/fliglio/http/zipball/a73265131048c2b6bdbd490a73abafe5bc7fd59e",
+                "reference": "a73265131048c2b6bdbd490a73abafe5bc7fd59e",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-16 03:52:24"
+            "time": "2015-06-10 14:14:29"
         },
         {
             "name": "fliglio/routing",
@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/routing.git",
-                "reference": "c2e6180f3dbde97eb2a31b44004fe2e70c217dcb"
+                "reference": "a09164a090b43bde0438a39557e54c56636a9286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/routing/zipball/c2e6180f3dbde97eb2a31b44004fe2e70c217dcb",
-                "reference": "c2e6180f3dbde97eb2a31b44004fe2e70c217dcb",
+                "url": "https://api.github.com/repos/fliglio/routing/zipball/a09164a090b43bde0438a39557e54c56636a9286",
+                "reference": "a09164a090b43bde0438a39557e54c56636a9286",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-16 21:22:07"
+            "time": "2015-06-11 20:47:46"
         },
         {
             "name": "fliglio/web",
@@ -322,12 +322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fliglio/web.git",
-                "reference": "99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f"
+                "reference": "af69c6be2f55493252b7756268663704bbbdea0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fliglio/web/zipball/99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f",
-                "reference": "99a29015d8e24a1fc3e5d7bc9371f22e2dc1724f",
+                "url": "https://api.github.com/repos/fliglio/web/zipball/af69c6be2f55493252b7756268663704bbbdea0f",
+                "reference": "af69c6be2f55493252b7756268663704bbbdea0f",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +336,7 @@
                 "fliglio/http": "dev-master",
                 "lib-curl": "*",
                 "php": ">=5.3",
-                "symfony/validator": "2.*"
+                "symfony/validator": "2.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.1.0"
@@ -357,35 +357,34 @@
                     "email": "benschw@gmail.com"
                 }
             ],
-            "time": "2015-04-16 03:53:08"
+            "time": "2015-06-10 14:21:54"
         },
         {
             "name": "symfony/translation",
-            "version": "dev-master",
-            "target-dir": "Symfony/Component/Translation",
+            "version": "2.8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "860910a026649ebb050f926c4c73cdbef6223eb9"
+                "reference": "95f9b028555f55b78b465a2488f1a38442acc412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/860910a026649ebb050f926c4c73cdbef6223eb9",
-                "reference": "860910a026649ebb050f926c4c73cdbef6223eb9",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/95f9b028555f55b78b465a2488f1a38442acc412",
+                "reference": "95f9b028555f55b78b465a2488f1a38442acc412",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=5.3.9"
             },
             "conflict": {
-                "symfony/config": "<2.8"
+                "symfony/config": "<2.7"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0",
-                "symfony/intl": "~2.8|~3.0",
-                "symfony/phpunit-bridge": "~2.8|~3.0",
-                "symfony/yaml": "~2.8|~3.0"
+                "symfony/config": "~2.7",
+                "symfony/intl": "~2.3|~3.0.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0.0",
+                "symfony/yaml": "~2.2|~3.0.0"
             },
             "suggest": {
                 "psr/log": "To use logging capability in translator",
@@ -395,11 +394,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Translation\\": ""
                 }
             },
@@ -409,48 +408,47 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Translation Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-10 07:31:54"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-11 19:27:42"
         },
         {
             "name": "symfony/validator",
-            "version": "2.8.x-dev",
+            "version": "v2.6.0",
             "target-dir": "Symfony/Component/Validator",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Validator.git",
-                "reference": "9663b595bffb5828471843cc37991e848313204a"
+                "reference": "cbf6575c4c9c83621df01483e215599f5377fc0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Validator/zipball/9663b595bffb5828471843cc37991e848313204a",
-                "reference": "9663b595bffb5828471843cc37991e848313204a",
+                "url": "https://api.github.com/repos/symfony/Validator/zipball/cbf6575c4c9c83621df01483e215599f5377fc0b",
+                "reference": "cbf6575c4c9c83621df01483e215599f5377fc0b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
-                "symfony/translation": "~2.4|~3.0.0"
+                "php": ">=5.3.3",
+                "symfony/translation": "~2.0"
             },
             "require-dev": {
                 "doctrine/annotations": "~1.0",
                 "doctrine/cache": "~1.0",
-                "egulias/email-validator": "~1.2,>=1.2.1",
-                "symfony/config": "~2.2|~3.0.0",
-                "symfony/expression-language": "~2.4|~3.0.0",
-                "symfony/http-foundation": "~2.1|~3.0.0",
-                "symfony/intl": "~2.3|~3.0.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0.0",
-                "symfony/property-access": "~2.3|~3.0.0",
-                "symfony/yaml": "~2.0,>=2.0.5|~3.0.0"
+                "egulias/email-validator": "~1.0",
+                "symfony/config": "~2.2",
+                "symfony/expression-language": "~2.4",
+                "symfony/http-foundation": "~2.1",
+                "symfony/intl": "~2.3",
+                "symfony/property-access": "~2.2",
+                "symfony/yaml": "~2.0"
             },
             "suggest": {
                 "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
@@ -466,7 +464,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -490,7 +488,7 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-11 08:55:16"
+            "time": "2014-11-28 10:00:40"
         }
     ],
     "packages-dev": [],
