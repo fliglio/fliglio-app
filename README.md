@@ -12,7 +12,8 @@
 	docker run -t -d -p 80 benschw/fl
 
 	
-	sudo docker build -t test . && sudo docker kill test && sudo docker rm test  && sudo docker run -t -d -p 80:80 -v /home/ben/dev/fliglio-app/:/var/www/ --name test test
+	docker build -t dev/fliglio-app . && docker run -t -d -p 80:80 -v /home/ben/dev/fliglio-app/:/var/www/ --name fliglio-app dev/fliglio-app
+	docker build -t dev/fliglio-app . && docker kill fliglio-app && docker rm fliglio-app && docker run -t -d -p 80:80 -v /home/ben/dev/fliglio-app/:/var/www/ --name fliglio-app dev/fliglio-app
 
 ### vhost-myapp
 
